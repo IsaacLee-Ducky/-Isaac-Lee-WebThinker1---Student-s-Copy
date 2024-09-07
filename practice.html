@@ -18,7 +18,45 @@
     </style>
   </head>
   <body>
+    <form>
+      <div class="row">
+        <div class="col">
+            <label name="fName">First Name</label>
+            <input type="type" class="form-control" id="fName" name="fName" placeholder="Eg. John">
+        </div>
+
+        <div class="col">
+          <label name="lName">Last Name</label>
+          <input type="type" class="form-control" id="lName" name="lName" placeholder="Eg. Tan">
+        </div>
+      </div>
+      </div>
+      <div class="row">
+        <label name="contact">Contact No.</label>
+        <input type="number" class="form-control" id="contact" name="contact" placeholder="Eg. 96969699">
+        <p id="contactErrorMsg" class="d-none text-danger">Invalid Number</p>
+      </div>
+      <div class="row">
+        <label name="email">Email</label>
+        <input type="email" class="form-control" id="email" name="email" placeholder="Eg. example@gmail.com">
+      </div>
+      <button type="button" class="btn btn-primary" id="submitBtn" onclick="validate()">Submit</button>
+    </form>
     <script>
+
+      let validate = () => {
+          let num = document.getElementById("contact");
+          let errorMsg = document.getElementById("contactErrorMsg");
+          if(num.value.length == 0){
+            num.classList = "form-control is-invalid";
+            errorMsg.classList = "text-danger";
+          }
+          else{
+            num.classList = "form-control";
+            errorMsg.classList = "d-none text-danger";
+            comsol.log("All Good!");
+          }
+      };
 
       let helloWorld = "Hello world";
       console.log(helloWorld);
@@ -39,12 +77,12 @@
       console.log(num5);
 
       num1 = 6;
-      if(numb > 0){
+      if(num1 > 0){
         
         console.log("Positive Number")
 
       }
-      else if(numb < 0){
+      else if(0 > num1){
 
         console.log("Negative Number")
 
@@ -55,9 +93,8 @@
 
       }
 
-
-    </script>
-    <h1 style="font-family:Fredoka" class="text-center" fw-bold">This is heading h1 size</h1>
+  </script>
+    <h1 style="font-family:Fredoka" class="text-center fw-bold">This is heading h1 size</h1>
     <h2 id="a" class="text-center fw-bold">This is heading h2 size</h2>
     <h3 id="b" class="text-center fw-bold">This is heading h3 size</h3>
     <h4 style="font-family:Fredoka" class="text-center fw-bold">This is heading h4 size</h4>

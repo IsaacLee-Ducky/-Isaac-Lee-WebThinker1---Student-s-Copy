@@ -53,19 +53,47 @@
 			</div>
 		</div>
 		<!-- Key section -->
-		<form class="container py-3">
+		<form class="container py-3" style="font-family:Fredoka;font-weight:bolder">
 			<div class="row gy-3">
 				<!-- Label: Name*
 						 Text Input field -->
-
+						 <div class="row">
+							<div class="col">
+								<label name="fName">First Name<span class="text-danger">*</span></label>
+								<input type="type" class="form-control" id="fName" name="fName" placeholder="Eg. John" required>
+							</div>
+					
+							<div class="col">
+							  <label name="lName">Last Name<span class="text-danger">*</span></label>
+							  <input type="type" class="form-control" id="lName" name="lName" placeholder="Eg. Tan">
+							</div>
+						  </div>
 				<!-- Label: Email Address*
 						 Email Input field -->
-
+						 <div class="row">
+							<div class="col">
+								<label name="email">Email<span class="text-danger">*</span></label>
+								<input type="email" class="form-control" id="email" name="email" placeholder="Eg. example@gmail.com" required>
+							</div>
+						</div>
 				<!-- Label: Subject*
 						 Text Input field with placeholder text "Enquiry on how to code"-->
-
-				<!-- Label: Subject*
+						 <div class="row">
+							<div class="col">
+								<label name="subject">Subject<span class="text-danger">*</span></label>
+								<input type="subject" class="form-control" id="subject" name="subject" placeholder="Eg. Enquiry on how to code" required>
+							</div>
+						</div>
+				<!-- Label: Message*
 						 Textarea field with the row attribute of value 5-->
+						 <div class="row"></div>
+							<div class="col">
+								<label name="message">Message<span class="text-danger">*</span></label>
+								<textarea type="message" class="form-control" id="message" name="message" required>
+								</textarea>
+							</div>
+						</div>
+						<button type="button" class="btn btn-primary" id="submitBtn" onclick="validate()">Submit</button>
 			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
 		</form>
