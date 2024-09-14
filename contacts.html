@@ -54,18 +54,20 @@
 		</div>
 		<!-- Key section -->
 		<form class="container py-3" style="font-family:Fredoka;font-weight:bolder">
-			<div class="row gy-3">
+			<div class="row py-3 gy-3">
 				<!-- Label: Name*
 						 Text Input field -->
 						 <div class="row">
 							<div class="col">
 								<label name="fName">First Name<span class="text-danger">*</span></label>
 								<input type="type" class="form-control" id="fName" name="fName" placeholder="Eg. John" required>
+								<p id="fNameErrorMsg" class="d-none text-danger">Invalid Number</p>
 							</div>
 					
 							<div class="col">
 							  <label name="lName">Last Name<span class="text-danger">*</span></label>
 							  <input type="type" class="form-control" id="lName" name="lName" placeholder="Eg. Tan">
+							  <p id="lNameErrorMsg" class="d-none text-danger">Invalid Number</p>
 							</div>
 						  </div>
 				<!-- Label: Email Address*
@@ -74,6 +76,7 @@
 							<div class="col">
 								<label name="email">Email<span class="text-danger">*</span></label>
 								<input type="email" class="form-control" id="email" name="email" placeholder="Eg. example@gmail.com" required>
+								<p id="emailErrorMsg" class="d-none text-danger">Invalid Number</p>
 							</div>
 						</div>
 				<!-- Label: Subject*
@@ -82,6 +85,7 @@
 							<div class="col">
 								<label name="subject">Subject<span class="text-danger">*</span></label>
 								<input type="subject" class="form-control" id="subject" name="subject" placeholder="Eg. Enquiry on how to code" required>
+								<p id="subjectErrorMsg" class="d-none text-danger">Invalid Number</p>
 							</div>
 						</div>
 				<!-- Label: Message*
@@ -89,13 +93,13 @@
 						 <div class="row"></div>
 							<div class="col">
 								<label name="message">Message<span class="text-danger">*</span></label>
-								<textarea type="message" class="form-control" id="message" name="message" required>
-								</textarea>
+								<textarea type="message" class="form-control" id="message" name="message" row = 5 placeholder="Eg. Enquiry message here"required></textarea>
+								<p id="messageErrorMsg" class="d-none text-danger">Invalid Number</p>
 							</div>
 						</div>
-						<button type="button" class="btn btn-primary" id="submitBtn" onclick="validate()">Submit</button>
-			</div>
 			<!-- Code a blue "Send" button inside a <div> according to the criteria stated -->
+				<button type="button" class="btn btn-primary" id="submitBtn" onclick="validate()">Submit</button>
+			</div>
 		</form>
 	</article>
 	<!-- End of coding region -->

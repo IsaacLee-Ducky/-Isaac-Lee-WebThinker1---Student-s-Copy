@@ -7,6 +7,9 @@
 	<script src="script/jquery.min.js"></script>
 	<script src="script/bootstrap.js"></script>
 	<script src="script/projects.js"></script>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
 	<link href="script/bootstrap.css" rel="stylesheet"/>
 	<link href="img/favicon-bbcc.png" rel="icon"/>
 	<link href="script/projects.css" rel="stylesheet"/>
@@ -43,14 +46,23 @@
 		<!-- Leading Text -->
 		<div class="py-3 bg-success bg-opacity-25">
 			<div class="container">
-				<p>Ever wondered what happens when teenagers armed with coding knowledge decide to conquer the universe? Well, we got the answer right here! Welcome to our showcase of stellar projects.</p>
+				<p style="font-family:Fredoka;font-weight:bolder">Ever wondered what happens when teenagers armed with coding knowledge decide to conquer the universe? Well, we got the answer right here! Welcome to our showcase of stellar projects.</p>
 			</div>
 		</div>
 		<!-- Key section -->
 		<div class="container py-3 pb-4">
 			<!-- Create An Unordered List with 2 List Items -->
-
+			<ul class="nav nav-pills" style="font-family:Fredoka;font-weight:bolder" class="text-center fw-bold">
+				<li class="nav-item">
+					<button class="nav-item rounded-pill active" data-bs-target="#scratch" data-bs-toggle="pill">Scratch Projects</button>
+					<button class="nav-item rounded-pill" data-bs-target="#scratch" data-bs-toggle="pill">HTML Canvas Project</button>
+				</li>
+			</ul>
 			<div class="tab-content">
+				<div class="tab-pane fade show active" id="scartch">
+					<iframe src="https://scratch.mit.edu/projects/1067715528/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
+				</div>
+				<div class="tab-pane fade show" id="scartch"></div>
 				<!-- Create two tabs for Project Showcase
 	-  The first tab should have
 				- One header of "Monke & Banana" with the following source: https://scratch.mit.edu/projects/808392264/embed (Width 485 & Height 402)
