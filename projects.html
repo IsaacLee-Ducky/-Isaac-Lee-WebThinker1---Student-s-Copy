@@ -6,7 +6,6 @@
 	<title>Byte Buster Coding Club</title>
 	<script src="script/jquery.min.js"></script>
 	<script src="script/bootstrap.js"></script>
-	<script src="script/projects.js"></script>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
@@ -56,21 +55,47 @@
 			<ul class="nav nav-pills" style="font-family:Fredoka;font-weight:bolder" class="text-center fw-bold">
 				<li class="nav-item">
 					<button class="nav-item rounded-pill active" data-bs-target="#scratch" data-bs-toggle="pill">Scratch Projects</button>
-					<button class="nav-item rounded-pill active" data-bs-target="#scratch" data-bs-toggle="pill">HTML Canvas Project</button>
+					<button class="nav-item rounded-pill" data-bs-target="#canvas" data-bs-toggle="pill">HTML Canvas Project</button>
 				</li>
 			</ul>
-			<div class="tab-content">
-				<div class="tab-pane fade show active" id="scartch">
+			<div class="tab-content  py-3">
+				<div class="tab-pane fade show active" id="scratch">
 					<h1 style="font-family:Fredoka;font-weight:bolder">Shoot The Chicken!</h1>
 					<iframe src="https://scratch.mit.edu/projects/1067715528/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 					
 					<h1 style="font-family:Fredoka;font-weight:bolder">Craftopia</h1>
 					<iframe src="https://scratch.mit.edu/projects/1071371747/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 
-					<h1 style="font-family:Fredoka;font-weight:bolder">Xbox...BUT IN SCRATCH!/h1>
+					<h1 style="font-family:Fredoka;font-weight:bolder">Xbox...BUT IN SCRATCH!
 					<iframe src="https://scratch.mit.edu/projects/887322564/embed" allowtransparency="true" width="485" height="402" frameborder="0" scrolling="no" allowfullscreen></iframe>
 				</div>
-				<div class="tab-pane fade show" id="scartch"></div>
+				<div class="tab-pane fade" id="canvas">
+
+					<canvas id ="CanvasBoard" height="600" width="800" class="border border-dark"></canvas>
+
+						<div class="btn-group">
+
+							<input class="btn-check" type="radio" name="pauseAnimation" id="pauseAnimation" checked>
+							<label class="btn btn-danger name="pauseAnimation">Pause Animation</label>
+
+							<input class="btn-check" type="radio" name="playAnimation" id="playAnimation">
+							<label class="btn btn-outline-success" name="playAnimation">Play Animation</label>
+
+						</div>
+
+			<!--	<script>
+						const canvas = document.getElementById("CanvasBoard");
+						let ctx = canvas.getContext('2d');
+						ctx.textAlign ="center"
+						ctx.font = "50px Comic Sans MS"
+						let gradient = ctx.createLinearGradient(0,0,400,0)
+						gradient.addColorStop(0, "rgb(255,0,0)")
+						gradient.addColorStop(1, "rgb(255,255,0)")
+						ctx.fillStyle = gradient
+						ctx.fillText("Hello people!", 400, 150);
+					</script> -->
+
+				</div>
 				<!-- Create two tabs for Project Showcase -->
 				<!--First tab
 	-  The first tab should have
@@ -89,8 +114,7 @@
 		</div>
 	</article>
 	<!-- End of coding region -->
-	<footer class="bg-dark text-light">
-		<div class="container py-2 pb-4">Done by Computhink Kids SG.</div>
-	</footer>
+	<footer class="bg-dark text-light"><div class="container py-2 pb-4" style="font-family:Fredoka;font-weight:bolder">Done by Computhink Kids SG and scammers and hackers.</div></footer>
+	<script src="script/projects.js"></script>
 </body>
 </html>
